@@ -30,7 +30,7 @@ The **Advertisement** component showcases logos of partner companies with animat
 ## How to Run the Project
 To run the project locally, follow these steps:
 1. **Clone the repository**:
-   git clone https://github.com/your-username/job-search-app.git
+   git clone https://github.com/Jeena-kj/recruitment_webui.git
 2. **Navigate to the project folder**:
    cd job-search-app
 3. **Install dependencies**:
