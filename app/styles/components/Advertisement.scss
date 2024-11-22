@@ -1,0 +1,50 @@
+.advertisement {
+  padding: 40px 0;
+  background-color: #f8f9fa;
+
+  .partner-logos-wrapper {
+    overflow: hidden;
+    width: 100%;
+  }
+
+  .partner-logos {
+    display: flex;
+    gap: 30px;
+    animation: scroll 20s linear infinite;
+
+    img {
+      max-width: 120px;
+      height: auto;
+    }
+  }
+
+  @keyframes scroll {
+    0% {
+      transform: translateX(0);
+    }
+    100% {
+      transform: translateX(-50%);
+    }
+  }
+
+  // Responsive adjustments
+  @media (max-width: 768px) {
+    .partner-logos {
+      gap: 15px;
+
+      img {
+        max-width: 80px;
+      }
+    }
+  }
+
+  @media (max-width: 576px) {
+    .partner-logos {
+      gap: 10px;
+
+      img {
+        max-width: 60px;
+      }
+    }
+  }
+}

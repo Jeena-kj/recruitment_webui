@@ -1,0 +1,38 @@
+.footer {
+    background-color: #003366;
+    color: #ffffff;
+
+    .footer-brand {
+      font-size: 1.25rem;
+      font-weight: bold;
+    }
+    h6 {
+      font-size: 1rem;
+      margin-bottom: 1rem;
+    }
+    a {
+      color: #ffffff;
+      text-decoration: none;
+      &:hover {
+        color: #ffc107;
+      }
+    }
+  .social-icons {
+    display: flex;
+    gap: 1rem;
+
+    a {
+      font-size: 1.25rem;
+      i {
+        &:hover {
+          color: #ffc107;
+        }
+      }
+    }
+  }
+  .list-unstyled {
+    li {
+      margin-bottom: 0.5rem;
+    }
+  }
+}

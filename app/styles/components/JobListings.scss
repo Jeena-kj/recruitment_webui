@@ -1,0 +1,144 @@
+.container {
+  margin-top: 20px;
+  
+  h2 {
+    font-size: 2rem;
+    font-weight: bold;
+    color: #333;
+    margin-bottom: 1.5rem;
+  }
+
+  .filterSection {
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    padding: 16px;
+    background-color: white !important;
+
+    .filter-header {
+      display: flex;
+      justify-content: space-between; 
+      align-items: center;
+      margin-bottom: 16px;
+    }
+    h5 {
+      font-size: 1.2rem;
+      font-weight: bold;
+      color: #333;
+      margin-bottom: 12px;
+    }
+
+    .filter-group {
+      padding-bottom: 16px;
+      margin-bottom: 16px;
+      border-bottom: 1px solid #ddd;
+    }
+
+    .filter-group:last-child {
+      border-bottom: none;
+    }
+
+    p {
+      font-size: 0.95rem;
+      font-weight: 500;
+      color: #555;
+      margin-bottom: 8px;
+    }
+
+    label {
+      margin-left: 10px;
+      font-size: 0.9rem;
+      color: #666;
+    }
+
+    input[type="radio"] {
+      margin-right: 8px;
+    }
+
+    div {
+      margin-bottom: 12px;
+    }
+  }
+
+.jobCard {
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  background-color: #fff;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+
+  &:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+  }
+
+  .card-body {
+    padding: 16px;
+
+    .card-title {
+      font-size: 1.4rem;
+      font-weight: bold;
+      color: #333;
+      margin-bottom: 8px;
+    }
+
+    .card-text {
+      font-size: 0.95rem;
+      color: #555;
+      margin-bottom: 8px;
+    }
+
+    .tags {
+      margin-top: 12px;
+
+      .badge {
+        font-size: 0.8rem;
+        font-weight: 500;
+        color: #fff;
+        background-color: #007bff;
+        border-radius: 12px;
+        padding: 6px 10px;
+        margin-right: 8px;
+        margin-bottom: 8px;
+      }
+    }
+  }
+}
+
+.job-details {
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  background-color: #fff;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+  padding: 20px;
+}
+@media (max-width: 768px) {
+  .container {
+    h2 {
+      font-size: 1.5rem;
+    }
+  }
+
+  .filterSection {
+    margin-bottom: 20px;
+  }
+  .filter-group{
+    display:none;
+  }
+  .jobCard {
+    .card-body {
+      .card-title {
+        font-size: 1.2rem;
+      }
+
+      .card-text {
+        font-size: 0.85rem;
+      }
+    }
+  }
+}
+
+@media (max-width: 576px) {
+  .filter-group{
+    display:none;
+  }
+}
+}

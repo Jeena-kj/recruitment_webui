@@ -1,0 +1,55 @@
+.header {
+  border-bottom: 1px solid #eaeaea;
+
+  // Desktop Navigation
+  .nav {
+    .nav-item {
+      position: relative;
+
+      .dropdown-menu {
+        position: absolute;
+        top: 100%;
+        left: 0;
+        z-index: 1000;
+        display: none;
+        min-width: 10rem;
+        padding: 0.5rem 0;
+        font-size: 0.9rem;
+        background-color: #fff;
+        border: 1px solid rgba(0, 0, 0, 0.15);
+        border-radius: 0.25rem;
+
+        .dropdown-item {
+          padding: 0.25rem 1rem;
+          color: #333;
+          text-decoration: none;
+
+          &:hover {
+            background-color: #f8f9fa;
+            color: #007bff;
+          }
+        }
+      }
+
+      &:hover .dropdown-menu {
+        display: block;
+      }
+    }
+  }
+
+  // Mobile Adjustments
+  .form-control {
+    border-radius: 0.5rem;
+  }
+
+  button {
+    border-radius: 0.5rem;
+  }
+
+  // Responsive Styling
+  @media (max-width: 768px) {
+    .nav {
+      display: none; // Hide desktop nav on mobile
+    }
+  }
+}
