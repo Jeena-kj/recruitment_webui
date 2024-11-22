@@ -1,36 +1,49 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# Software Recruitment Co.
+## Technologies Used
 
-## Getting Started
+- **Node v20.17.0**
+- **Next.js v15.0.3**: A React-based framework used for server-side rendering and building static websites.
+- **React v10.8.2**: A JavaScript library for building user interfaces.
+- **SCSS v1.81.0**: A preprocessor for CSS that allows for variables, nesting, and modular styling.
+- **HTML**: For creating the structure and content of the web pages.
+- **Bootstrap v5.3.3**: A front-end framework used for responsive design and UI components.
+- **Font Awesome**: A library for scalable vector icons, used for visual enhancement of the UI.
 
-First, run the development server:
+## Components Overview
+1. SearchJob Component
+The **SearchJob** component provides a search bar for users to search for job listings.
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
-```
+2. LatestJobs Component
+The **LatestJobs** component displays the most recent job listings:
+Sample Job Data:
+------------------------------
+const jobs = [
+  { id: 1, language: 'Python', title: 'Lead Tech Developer', location: 'London', salary: '£65,000', date: '20/09/2023', description: 'Responsible for leading engineering teams.' },
+  { id: 2, language: 'PHP', title: 'Fullstack Developer', location: 'London', salary: '£55,000', date: '21/09/2023', description: 'Full-stack development of web applications.' },
+  { id: 3, language: 'React', title: 'Software Engineer', location: 'London', salary: '£45,000', date: '23/09/2023', description: 'Developing React-based interfaces.' },
+  // ... more jobs
+];
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+3. Advertisement Component
+The **Advertisement** component showcases logos of partner companies with animation moving effect
 
-You can start editing the page by modifying `app/page.js`. The page auto-updates as you edit the file.
+## How to Run the Project
+To run the project locally, follow these steps:
+1. **Clone the repository**:
+   git clone https://github.com/your-username/job-search-app.git
+2. **Navigate to the project folder**:
+   cd job-search-app
+3. **Install dependencies**:
+   npm install
+4. **Run the development server**:
+  npm run dev
+5. **Run application **:
+  http://localhost:3000
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+## Supporting Document attached for Reference
+   **File Name: Unit test cases**
 
-## Learn More
+Conclusion:
+This task was a great opportunity to demonstrate my skills in Next.js, SCSS,BootStrap and HTML.
 
-To learn more about Next.js, take a look at the following resources:
-
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
-
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
-
-## Deploy on Vercel
-
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+##Author: Jeena K J
